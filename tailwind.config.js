@@ -15,6 +15,7 @@ export default {
       "base-title": "#272221",
 
       "amber-dark": "#d97706",
+      "amber-mind": "#f59e0b",
       amber: "#fbbf24",
       "amber-light": "#fef3c7",
 

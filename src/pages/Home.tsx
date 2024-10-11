@@ -1,6 +1,7 @@
 import { Coffee, Package, ShoppingCart, Timer } from "@phosphor-icons/react";
+import { Card } from "../components/Card";
+
 import coffeeHome from "../assets/coffee-home.svg";
-import { Card } from "./Card";
 import { coffees } from "../mock/data.json";
 
 export function Home() {
@@ -52,11 +53,10 @@ export function Home() {
           Nossos cafés
         </h1>
         <div className="grid grid-cols-4 gap-y-10 gap-x-8">
-        {coffees.map((coffee) => (
-          <Card key={coffee.id} coffee={coffee} />
-        ))}
+          {coffees.map((coffee) => (
+            <Card key={coffee.id} coffee={coffee} />
+          ))}
         </div>
-        
       </div>
     </div>
   );
